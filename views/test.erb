@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head></head> 
+<body>
+    <% if session[:message] %>
+        <%= session[:message] %>
+    <% session[:message] = nil %>
+    <% end %>
+    <div style = "position:absolute; top: 200px; left: 10px">
+    
+    <% if session[:alert] %>
+        <h3 style="color:red;"><%= session[:alert] %> </h3>
+    <% session[:alert] = nil %>
+    <% end %>
+    </div>
+</body>
+    
+</html>
